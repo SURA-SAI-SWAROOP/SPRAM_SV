@@ -22,10 +22,10 @@ always@(posedge clk) begin
         else begin
           rdata<=mem [addr];
         end
-          end
-        else begin
-          rdata<=64'dz;
-        end
+      end
+      else begin
+        rdata<=64'dz;
       end
     end
-  endmodule
+  end
+endmodule
