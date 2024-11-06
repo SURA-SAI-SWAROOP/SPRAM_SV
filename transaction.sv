@@ -9,7 +9,7 @@ int count=0;
 int a=0;
 //post randomize function to display randomized items
 function void post_randomize();
-$display(post_randomize---");
+$display("-------------post_randomize---------");
 $display("\t addr=%0h", addr);
 if (me)
 $display("\t wen=%0h\t wdata=%0h/t me=%0h", wen, wdata, me);
@@ -38,3 +38,7 @@ trans.addr=this.addr;
 trans=new();
 trans.wen=this.wen;
 trans.me=this.me;
+trans.wdata=this.wdata;
+return trans;
+endfunction
+endclass
